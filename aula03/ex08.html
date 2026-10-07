@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 03 - Exercício 08</title>
+        <style>
+            table, tr, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercício 08 - Rowspan</h1>
+
+        <table>
+            <tr>
+                <th>Horário</th>
+                <th>Atividade</th>
+            </tr>
+            <tr>
+                <td>08:00 - 10:00</td>
+                <!-- a célula ocupa 2 linhas -->
+                <td rowspan="2">Reunião</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+            </tr>
+            <tr>
+                <td>13:00 - 14:00</td>
+                <td>Almoço</td>
+            </tr>
+        </table>
+    </body>
+</html>

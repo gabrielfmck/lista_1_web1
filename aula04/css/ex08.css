@@ -1,0 +1,10 @@
+/* O caminho da imagem é relativo ao arquivo CSS (css/), por isso o ../ */
+body {
+    background-image: url("../imagens/fundo.jpg");
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 16pt;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 07 - Exercício 01 - Cor do Parágrafo</title>
+    </head>
+    <body>
+        <h1>Exercício 01 - Alterando a cor</h1>
+
+        <!-- Inicialmente o texto está azul -->
+        <p id="paragrafo" style="color: blue;">Este parágrafo muda de cor quando os botões são clicados.</p>
+
+        <button onclick="corVermelha()">Alterar para cor vermelha</button>
+        <button onclick="corAzul()">Alterar para cor azul</button>
+
+        <script>
+            function corVermelha() {
+                document.getElementById("paragrafo").style.color = "red";
+            }
+
+            function corAzul() {
+                document.getElementById("paragrafo").style.color = "blue";
+            }
+        </script>
+    </body>
+</html>

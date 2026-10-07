@@ -1,0 +1,27 @@
+/* Remove margens e padding padrão do body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fundo laranja com bordas verdes */
+.primeira {
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+    border: 10px solid green;
+    box-sizing: border-box;
+}
+
+/* Fundo roxo: bordas superior e inferior amarelas, esquerda e direita marrons */
+.segunda {
+    width: 100%;
+    height: 200px;
+    background-color: purple;
+    border-top: 10px solid yellow;
+    border-bottom: 10px solid yellow;
+    border-left: 10px solid brown;
+    border-right: 10px solid brown;
+    margin-top: 10px;
+    box-sizing: border-box;
+}

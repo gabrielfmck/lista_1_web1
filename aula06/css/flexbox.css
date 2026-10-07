@@ -1,0 +1,27 @@
+body {
+    min-height: 500px;
+    display: flex;                    /* flex-direction: row é o padrão */
+    border: 5px solid black;
+    justify-content: space-evenly;    /* distribui as caixas no eixo principal */
+    align-items: center;              /* centraliza no eixo cruzado */
+    align-content: center;            /* centraliza as linhas quando houver quebra */
+    flex-wrap: wrap;                  /* janela menor: as caixas descem para a linha de baixo */
+    gap: 10px;
+}
+
+/* A caixa também é flex para centralizar a foto dentro dela */
+.caixa {
+    width: 120px;
+    height: 120px;
+    background-color: blueviolet;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A foto cabe na caixa sem ser distorcida */
+.caixa img {
+    max-width: 100%;
+    max-height: 100%;
+}

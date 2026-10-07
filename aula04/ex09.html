@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 04 - Exercício 09 - Patos</title>
+        <link rel="stylesheet" href="css/paginas.css">
+    </head>
+    <body>
+        <h1>Exercício 09 - Mapa de imagem com poly</h1>
+        <p>Clique em um dos patos para saber mais sobre ele.</p>
+
+        <!-- Na forma poly, cada par x,y é um vértice do contorno do pato -->
+        <map name="patos">
+            <area shape="poly" coords="245,359,270,340,283,323,307,325,317,343,312,380,358,390,373,403,372,437,363,447,320,450,270,450,255,430,253,407,267,387,287,373,288,362,273,355"
+                  href="patos/pato-cabeca-marrom.html" alt="Pato de cabeça marrom">
+            <area shape="poly" coords="375,360,390,340,400,317,420,318,427,337,425,380,453,392,497,397,487,410,480,437,467,463,437,472,387,472,370,450,368,423,380,397,400,377,402,358,387,362"
+                  href="patos/pato-cabeca-cinza.html" alt="Pato de cabeça cinza">
+        </map>
+
+        <img src="imagens/patos.jpg" usemap="#patos" alt="Dois patos nadando em um lago">
+    </body>
+</html>

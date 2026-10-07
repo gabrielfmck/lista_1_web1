@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 07 - Exercício 03 - Ocultar e Exibir</title>
+    </head>
+    <body>
+        <h1>Exercício 03 - Ocultar e exibir parágrafos</h1>
+
+        <p id="p01">Primeiro parágrafo: o HTML define a estrutura da página.</p>
+        <p id="p02">Segundo parágrafo: o CSS define o estilo da página.</p>
+        <p id="p03">Terceiro parágrafo: o JavaScript adiciona interatividade e comportamento.</p>
+
+        <button onclick="ocultarParagrafos()">Ocultar</button>
+        <button onclick="exibirParagrafos()">Exibir</button>
+
+        <script>
+            function ocultarParagrafos() {
+                document.getElementById("p01").style.display = "none";
+                document.getElementById("p02").style.display = "none";
+                document.getElementById("p03").style.display = "none";
+            }
+
+            function exibirParagrafos() {
+                document.getElementById("p01").style.display = "block";
+                document.getElementById("p02").style.display = "block";
+                document.getElementById("p03").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

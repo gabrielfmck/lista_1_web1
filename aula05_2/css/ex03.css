@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.quadro {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+}
+
+.div1,
+.div2,
+.div3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.div1 {
+    top: 0;
+    left: 0;
+    background-color: #e39c50;
+}
+
+.div3 {
+    top: 150px;
+    left: 0;
+    background-color: green;
+}
+
+/* A segunda divisão fica sobre a primeira e a terceira. */
+.div2 {
+    top: 25px;
+    left: 25px;
+    background-color: red;
+    z-index: 1;
+}

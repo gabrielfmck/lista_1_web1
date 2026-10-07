@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 04 - Exercício 01 - Bandeiras</title>
+        <link rel="stylesheet" href="css/paginas.css">
+    </head>
+    <body>
+        <h1>Exercício 01 - Bandeiras da América Latina</h1>
+        <p>Clique em uma bandeira de um país da América Latina para ver informações sobre ele.</p>
+
+        <!-- Cada <area> é um retângulo: x1,y1 (canto superior esquerdo), x2,y2 (canto inferior direito) -->
+        <map name="bandeiras">
+            <area shape="rect" coords="34,46,155,131" href="paises/brasil.html" alt="Brasil">
+            <area shape="rect" coords="40,171,147,245" href="paises/mexico.html" alt="México">
+            <area shape="rect" coords="170,177,286,252" href="paises/uruguai.html" alt="Uruguai">
+            <area shape="rect" coords="308,177,425,254" href="paises/argentina.html" alt="Argentina">
+            <area shape="rect" coords="577,412,695,484" href="paises/paraguai.html" alt="Paraguai">
+        </map>
+
+        <img src="imagens/bandeiras.jpg" usemap="#bandeiras" alt="Bandeiras de vários países">
+    </body>
+</html>

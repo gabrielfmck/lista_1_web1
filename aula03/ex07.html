@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 03 - Exercício 07</title>
+        <style>
+            table, tr, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercício 07 - Colspan</h1>
+
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Produto 1</td>
+                <td>2</td>
+                <td>R$ 50,00</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>1</td>
+                <td>R$ 150,00</td>
+                <td>R$ 150,00</td>
+            </tr>
+            <tr>
+                <!-- a célula ocupa as 3 primeiras colunas -->
+                <td colspan="3">Total Geral</td>
+                <td>R$ 250,00</td>
+            </tr>
+        </table>
+    </body>
+</html>

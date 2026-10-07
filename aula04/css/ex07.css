@@ -1,0 +1,20 @@
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+}
+
+/* Linha abaixo do texto */
+p.sublinhado {
+    text-decoration: underline;
+}
+
+/* Linha acima do texto + indentação de 50px */
+p.linha-acima {
+    text-decoration: overline;
+    text-indent: 50px;
+}
+
+/* Linha no meio do texto */
+p.riscado {
+    text-decoration: line-through;
+}

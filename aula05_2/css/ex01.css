@@ -1,0 +1,27 @@
+/* O bloco verde fica sobre os outros dois, como no modelo. */
+div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.vermelho {
+    top: 8px;
+    left: 8px;
+    background-color: red;
+    z-index: 1;
+}
+
+.azul {
+    top: 108px;
+    left: 108px;
+    background-color: blue;
+    z-index: 2;
+}
+
+.verde {
+    top: 58px;
+    left: 58px;
+    background-color: green;
+    z-index: 3;
+}
