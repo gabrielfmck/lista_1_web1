@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <!-- Define a codificação dos caracteres e o nome do exercício na aba do navegador. -->
         <meta charset="UTF-8">
         <title>Aula 07 - Exercício 03 - Ocultar e Exibir</title>
     </head>
     <body>
         <h1>Exercício 03 - Ocultar e exibir parágrafos</h1>
 
+        <!-- Cada parágrafo possui um id próprio para ser selecionado pelo JavaScript. -->
         <p id="p01">Primeiro parágrafo: o HTML define a estrutura da página.</p>
         <p id="p02">Segundo parágrafo: o CSS define o estilo da página.</p>
         <p id="p03">Terceiro parágrafo: o JavaScript adiciona interatividade e comportamento.</p>
 
+        <!-- Os botões chamam as funções que controlam a exibição dos três parágrafos. -->
         <button onclick="ocultarParagrafos()">Ocultar</button>
         <button onclick="exibirParagrafos()">Exibir</button>
 
+        <!-- As funções alteram a propriedade CSS display dos elementos encontrados pelo id. -->
         <script>
+            // display: none oculta os parágrafos e retira o espaço que ocupam no layout.
             function ocultarParagrafos() {
                 document.getElementById("p01").style.display = "none";
                 document.getElementById("p02").style.display = "none";
                 document.getElementById("p03").style.display = "none";
             }
 
+            // display: block volta a exibir os parágrafos como elementos de bloco.
             function exibirParagrafos() {
                 document.getElementById("p01").style.display = "block";
                 document.getElementById("p02").style.display = "block";

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <!-- UTF-8 permite acentos; title identifica o exercício na aba do navegador. -->
         <meta charset="UTF-8">
         <title>Aula 07 - Exercício 01 - Cor do Parágrafo</title>
     </head>
@@ -10,14 +11,18 @@
         <!-- Inicialmente o texto está azul -->
         <p id="paragrafo" style="color: blue;">Este parágrafo muda de cor quando os botões são clicados.</p>
 
+        <!-- Cada onclick chama a função correspondente quando o botão recebe um clique. -->
         <button onclick="corVermelha()">Alterar para cor vermelha</button>
         <button onclick="corAzul()">Alterar para cor azul</button>
 
+        <!-- O JavaScript incorporado acessa o parágrafo pelo id e altera seu estilo. -->
         <script>
+            // Busca o elemento com id "paragrafo" e define a cor do texto como vermelha.
             function corVermelha() {
                 document.getElementById("paragrafo").style.color = "red";
             }
 
+            // Restaura a cor azul do mesmo parágrafo.
             function corAzul() {
                 document.getElementById("paragrafo").style.color = "blue";
             }

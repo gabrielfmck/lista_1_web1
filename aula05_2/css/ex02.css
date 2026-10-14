@@ -1,3 +1,6 @@
+/* O quadro é posicionado a 8px do topo e da esquerda da referência inicial. */
+/* Sua posição absoluta também o torna a referência dos blocos internos. */
+/* width e height medem o conteúdo: as bordas acrescentam 20px a cada dimensão. */
 .quadro {
     position: absolute;
     top: 8px;
@@ -9,6 +12,9 @@
 }
 
 /* As posições são medidas a partir do interior do quadro. */
+/* O seletor agrupado compartilha tamanho e posicionamento absoluto entre as cores. */
+/* Os blocos saem do fluxo normal e usam a caixa de preenchimento do quadro como referência. */
+/* Neste exemplo o quadro não tem padding, então essa referência coincide com sua área de conteúdo. */
 .vermelho,
 .azul {
     position: absolute;
@@ -16,12 +22,14 @@
     height: 200px;
 }
 
+/* Coordenadas zero encostam o vermelho no canto superior esquerdo, dentro da borda. */
 .vermelho {
     top: 0;
     left: 0;
     background-color: red;
 }
 
+/* O azul avança 30px nos dois eixos; z-index: 1 o coloca sobre o vermelho. */
 .azul {
     top: 30px;
     left: 30px;

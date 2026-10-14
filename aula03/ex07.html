@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <!-- head define a codificação, o título da aba e o CSS da tabela. -->
     <head>
         <meta charset="UTF-8">
         <title>Aula 03 - Exercício 07</title>
         <style>
+            /* Os seletores separados por vírgulas compartilham a mesma regra de borda. */
             table, tr, th, td {
                 border: 1px solid black;
             }
@@ -12,6 +14,7 @@
     <body>
         <h1>Exercício 07 - Colspan</h1>
 
+        <!-- table organiza quatro colunas; tr define as linhas, th os cabeçalhos e td os valores. -->
         <table>
             <tr>
                 <th>Item</th>
@@ -31,6 +34,7 @@
                 <td>R$ 150,00</td>
                 <td>R$ 150,00</td>
             </tr>
+            <!-- colspan une células horizontalmente, deixando a quarta coluna livre para o total. -->
             <tr>
                 <!-- a célula ocupa as 3 primeiras colunas -->
                 <td colspan="3">Total Geral</td>

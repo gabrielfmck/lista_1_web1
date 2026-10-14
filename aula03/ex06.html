@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <!-- head reúne os metadados e as regras CSS para a tabela de horários. -->
     <head>
         <meta charset="UTF-8">
         <title>Aula 03 - Exercício 06 - Página Pessoal</title>
         <style>
+            /* Unifica as bordas compartilhadas entre células vizinhas. */
             table {
                 border-collapse: collapse;
             }
+            /* O espaço interno afasta o texto das bordas; o alinhamento central vale para todas as células. */
             th, td {
                 border: 1px solid black;
                 padding: 8px;
                 text-align: center;
             }
+            /* Destaca as células de cabeçalho com fundo azul e texto branco. */
             th {
                 background-color: #1d4e89;
                 color: white;
@@ -19,25 +23,30 @@
         </style>
     </head>
     <body>
+        <!-- Os atributos style aplicam CSS diretamente ao nome e aos parágrafos de apresentação. -->
         <!-- Nome em destaque -->
         <h1 style="text-align:center; color:#1d4e89; font-size:300%;">Gabriel Fernandes de Jesus</h1>
         <p style="text-align:center;">
             <i>Sistemas de Informação - UFU</i>
         </p>
 
+        <!-- src localiza o avatar na subpasta imagens; alt descreve a imagem e as dimensões são em pixels. -->
         <p style="text-align:center;">
             <img src="imagens/foto.png" alt="Avatar com as iniciais GF" width="150" height="150">
         </p>
 
+        <!-- hr marca uma separação temática entre a apresentação e as próximas seções. -->
         <hr />
 
         <!-- Colégios: troque pelos nomes e sites das escolas em que você estudou -->
+        <!-- h2 identifica a seção; ul e li organizam os links das escolas em uma lista. -->
         <h2>Onde estudei</h2>
         <ul>
             <li><b>Ensino Fundamental:</b> <a href="https://www.exemplo.com.br">Nome da Escola do Ensino Fundamental</a></li>
             <li><b>Ensino Médio:</b> <a href="https://www.exemplo.com.br">Nome da Escola do Ensino Médio</a></li>
         </ul>
 
+        <!-- Os elementos a usam endereços absolutos em href para acessar sites externos. -->
         <h2>Sites favoritos</h2>
         <ul>
             <li><a href="https://www.ufu.br">UFU - Universidade Federal de Uberlândia</a></li>
@@ -50,8 +59,10 @@
         <hr />
 
         <!-- Horários: ajuste conforme a sua grade do semestre -->
+        <!-- A tabela cruza horários nas linhas com os dias da semana nas colunas. -->
         <h2>Horário de aulas do semestre</h2>
         <table>
+            <!-- th identifica os cabeçalhos; tr agrupa as células de uma mesma linha. -->
             <tr>
                 <th>Horário</th>
                 <th>Segunda</th>
@@ -62,16 +73,19 @@
             </tr>
             <tr>
                 <td>19:00 - 19:50</td>
+                <!-- rowspan="2" faz cada disciplina ocupar dois horários consecutivos. -->
                 <td rowspan="2">Programação para Web I</td>
                 <td rowspan="2">Banco de Dados</td>
                 <td rowspan="2">Programação para Web I</td>
                 <td rowspan="2">Engenharia de Software</td>
                 <td>-</td>
             </tr>
+            <!-- As disciplinas já ocupam esta linha por rowspan; são criadas apenas as células restantes. -->
             <tr>
                 <td>19:50 - 20:40</td>
                 <td>-</td>
             </tr>
+            <!-- O segundo bloco de aulas repete a união vertical de células para os dois últimos horários. -->
             <tr>
                 <td>20:50 - 21:40</td>
                 <td rowspan="2">Estruturas de Dados</td>

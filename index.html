@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <!-- Define a codificação dos caracteres e o título exibido na aba do navegador. -->
         <meta charset="UTF-8">
         <title>Primeira Lista de Exercícios - Programação para Web I</title>
+        <!-- Os estilos do índice ficam incorporados ao próprio documento HTML. -->
         <style>
+            /* Define a fonte e as cores da página e remove o espaçamento padrão do corpo. */
             body {
                 font-family: Arial, sans-serif;
                 margin: 0;
@@ -11,15 +14,18 @@
                 background-color: #f2f2f2;
                 color: #222222;
             }
+            /* Destaca a identificação do trabalho em uma faixa azul com texto centralizado. */
             .cabecalho {
                 background-color: #1d4e89;
                 color: white;
                 text-align: center;
                 padding: 20px;
             }
+            /* Deixa espaço abaixo do título, sem margem nas outras direções. */
             .cabecalho h1 {
                 margin: 0 0 10px 0;
             }
+            /* Flexbox centraliza os cartões; flex-wrap permite novas linhas conforme o espaço disponível. */
             .conteudo {
                 display: flex;
                 flex-wrap: wrap;
@@ -27,6 +33,7 @@
                 gap: 20px;
                 padding: 20px;
             }
+            /* Cada aula aparece em um cartão com largura definida, cantos arredondados e sombra. */
             .aula {
                 background-color: white;
                 width: 260px;
@@ -34,22 +41,27 @@
                 border-radius: 10px;
                 box-shadow: 2px 2px 6px gray;
             }
+            /* Usa a cor do cabeçalho nos títulos das aulas e remove sua margem superior. */
             .aula h2 {
                 color: #1d4e89;
                 margin-top: 0;
             }
+            /* Separa verticalmente os links dos exercícios para facilitar a leitura. */
             .aula li {
                 margin-bottom: 5px;
             }
         </style>
     </head>
     <body>
+        <!-- Apresenta o título do trabalho, o aluno e a instituição; &nbsp; cria espaços sem quebra de linha. -->
         <div class="cabecalho">
             <h1>Primeira Lista de Exercícios - Programação para Web I</h1>
             <b>Aluno:</b> Gabriel Fernandes de Jesus &nbsp; | &nbsp; UFU (2026/2)
         </div>
 
+        <!-- Agrupa os cartões; cada href usa um caminho relativo à pasta deste index.html. -->
         <div class="conteudo">
+            <!-- Aula 02_2: links para os exercícios de introdução ao HTML e navegação. -->
             <div class="aula">
                 <h2>Aula 02_2</h2>
                 <ul>
@@ -63,6 +75,7 @@
             </div>
 
             <div class="aula">
+                <!-- Aula 03: exercícios de listas, página pessoal e tabelas. -->
                 <h2>Aula 03</h2>
                 <ul>
                     <li><a href="aula03/ex01.html">Exercício 01 - Listas aninhadas</a></li>
@@ -79,6 +92,7 @@
             </div>
 
             <div class="aula">
+                <!-- Aula 04: exercícios de mapas de imagem, favicon e estilos CSS. -->
                 <h2>Aula 04</h2>
                 <ul>
                     <li><a href="aula04/ex01.html">Exercício 01 - Mapa das bandeiras</a></li>
@@ -94,6 +108,7 @@
             </div>
 
             <div class="aula">
+                <!-- Aula 05_2: exercícios de posicionamento e sobreposição de blocos. -->
                 <h2>Aula 05_2</h2>
                 <ul>
                     <li><a href="aula05_2/ex01.html">Exercício 01 - Blocos sobrepostos</a></li>
@@ -103,6 +118,7 @@
             </div>
 
             <div class="aula">
+                <!-- Aula 06: exemplos de organização dos elementos com Flexbox e Grid. -->
                 <h2>Aula 06</h2>
                 <ul>
                     <li><a href="aula06/flexbox.html">Exercício FlexBox</a></li>
@@ -111,6 +127,7 @@
             </div>
 
             <div class="aula">
+                <!-- Aula 07: exercícios que alteram a página por meio de JavaScript. -->
                 <h2>Aula 07</h2>
                 <ul>
                     <li><a href="aula07/ex01.html">Exercício 01 - Cor do parágrafo</a></li>

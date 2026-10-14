@@ -1,19 +1,23 @@
+/* Regras comuns a todos os parágrafos; padding cria espaço interno entre o texto e as bordas do elemento. */
 p {
     font-family: Arial, sans-serif;
     font-size: 14pt;
     padding: 10px;
 }
 
+/* Alinha o texto à esquerda dentro dos parágrafos que possuem a classe esquerda. */
 p.esquerda {
     text-align: left;
     background-color: #ffe5e5;
 }
 
+/* Centraliza o texto e usa uma cor de fundo para identificar visualmente este exemplo. */
 p.centro {
     text-align: center;
     background-color: #e5ffe5;
 }
 
+/* Alinha o texto à direita; o alinhamento afeta o conteúdo, sem mover o próprio parágrafo. */
 p.direita {
     text-align: right;
     background-color: #e5e5ff;

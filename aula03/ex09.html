@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <!-- head reúne a codificação UTF-8, o título da aba e o CSS incorporado à página. -->
     <head>
         <meta charset="UTF-8">
         <title>Aula 03 - Exercício 09</title>
         <style>
+            /* A tabela ocupa toda a largura disponível e define fonte, tamanho e cor do texto das células. */
             table {
                 width: 100%;
                 border-collapse: collapse;      /* remove o espaço entre as bordas */
@@ -11,18 +13,22 @@
                 font-size: 11pt;
                 color: #333333;
             }
+            /* padding define espaço interno vertical e horizontal; as células recebem borda e texto centralizado. */
             th, td {
                 border: 1px solid black;
                 padding: 25px 10px;
                 text-align: center;
             }
+            /* As células th recebem uma aparência própria para destacar os cabeçalhos. */
             th {
                 background-color: #0b4fa8;      /* azul do cabeçalho */
                 color: white;
             }
+            /* Este seletor alcança apenas células td que possuem a classe esquerda. */
             td.esquerda {
                 text-align: left;               /* primeira coluna alinhada à esquerda */
             }
+            /* nth-child(even) seleciona linhas em posições pares dentro de cada grupo de linhas. */
             tr:nth-child(even) {
                 background-color: #a9d3fd;      /* linhas pares em azul claro */
             }
@@ -31,7 +37,9 @@
     <body>
         <h1>Exercício 09 - Tabela do Imposto de Renda</h1>
 
+        <!-- A tabela organiza as faixas e valores apresentados no exercício em três colunas. -->
         <table>
+            <!-- thead agrupa a linha de cabeçalhos; th identifica o significado de cada coluna. -->
             <thead>
                 <tr>
                     <th>Base de cálculo mensal em R$</th>
@@ -39,6 +47,8 @@
                     <th>Parcela a deduzir do imposto em R$</th>
                 </tr>
             </thead>
+            <!-- tbody reúne os registros; cada tr contém três células td. -->
+            <!-- A classe esquerda liga a primeira célula de cada linha à regra CSS de alinhamento. -->
             <tbody>
                 <tr>
                     <td class="esquerda">Até 1.903,98</td>

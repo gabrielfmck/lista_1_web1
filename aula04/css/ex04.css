@@ -1,4 +1,5 @@
 /* Exercício 04 - um estilo diferente para cada parágrafo */
+/* O seletor p.paragrafo1 aplica estas cores e esta fonte somente aos parágrafos dessa classe. */
 p.paragrafo1 {
     background-color: yellow;
     color: red;
@@ -6,6 +7,7 @@ p.paragrafo1 {
     font-size: 16pt;
 }
 
+/* A segunda classe combina fundo escuro, texto amarelo e uma fonte menor, medida em pontos (pt). */
 p.paragrafo2 {
     background-color: black;
     color: yellow;
@@ -13,6 +15,7 @@ p.paragrafo2 {
     font-size: 14pt;
 }
 
+/* A terceira classe usa tons de azul e Courier, uma fonte de caracteres com largura fixa. */
 p.paragrafo3 {
     background-color: lightblue;
     color: darkblue;

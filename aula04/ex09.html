@@ -1,15 +1,20 @@
 <!DOCTYPE html>
+<!-- Documento HTML5; lang informa o idioma do conteúdo ao navegador e aos leitores de tela. -->
 <html lang="pt-BR">
     <head>
+        <!-- UTF-8 permite exibir os acentos; title define o texto da aba do navegador. -->
         <meta charset="UTF-8">
         <title>Aula 04 - Exercício 09 - Patos</title>
+        <!-- Importa a folha de estilos externa compartilhada com as páginas dos patos. -->
         <link rel="stylesheet" href="css/paginas.css">
     </head>
     <body>
+        <!-- Apresentação da atividade e orientação para clicar nos contornos definidos pelo mapa. -->
         <h1>Exercício 09 - Mapa de imagem com poly</h1>
         <p>Clique em um dos patos para saber mais sobre ele.</p>
 
         <!-- Na forma poly, cada par x,y é um vértice do contorno do pato -->
+        <!-- shape="poly" cria um polígono com coordenadas em pixels; href liga cada região à página correspondente. -->
         <map name="patos">
             <area shape="poly" coords="245,359,270,340,283,323,307,325,317,343,312,380,358,390,373,403,372,437,363,447,320,450,270,450,255,430,253,407,267,387,287,373,288,362,273,355"
                   href="patos/pato-cabeca-marrom.html" alt="Pato de cabeça marrom">
@@ -17,6 +22,7 @@
                   href="patos/pato-cabeca-cinza.html" alt="Pato de cabeça cinza">
         </map>
 
+        <!-- usemap referencia o name do mapa; alt fornece uma descrição textual da fotografia. -->
         <img src="imagens/patos.jpg" usemap="#patos" alt="Dois patos nadando em um lago">
     </body>
 </html>

@@ -1,18 +1,22 @@
 /* Estilo usado pelos exercícios 01 e 09 (mapas de imagem) e suas páginas */
+/* Define a fonte e a cor base do documento; margin deixa uma margem externa de 20px. */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     color: #222222;
 }
 
+/* Destaca os títulos principais com a mesma cor azul usada nos links. */
 h1 {
     color: #1d4e89;
 }
 
+/* Mantém os parágrafos em um tamanho uniforme nas páginas que importam esta folha. */
 p {
     font-size: 13pt;
 }
 
+/* Aplica a cor azul aos links de navegação. */
 a {
     color: #1d4e89;
 }

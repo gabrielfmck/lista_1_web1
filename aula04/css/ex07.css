@@ -1,3 +1,4 @@
+/* Define a fonte e o tamanho compartilhados pelos três exemplos de decoração. */
 p {
     font-family: Arial, sans-serif;
     font-size: 14pt;
@@ -9,6 +10,7 @@ p.sublinhado {
 }
 
 /* Linha acima do texto + indentação de 50px */
+/* overline desenha a linha superior; text-indent recua somente a primeira linha do parágrafo. */
 p.linha-acima {
     text-decoration: overline;
     text-indent: 50px;

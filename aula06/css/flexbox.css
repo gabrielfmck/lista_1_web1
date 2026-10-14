@@ -1,15 +1,22 @@
+/* O body organiza seus filhos em linhas flexíveis. */
+/* Na direção padrão row, o eixo principal é horizontal e o cruzado é vertical. */
+/* min-height garante espaço vertical mínimo; gap separa linhas e itens. */
 body {
     min-height: 500px;
     display: flex;                    /* flex-direction: row é o padrão */
     border: 5px solid black;
     justify-content: space-evenly;    /* distribui as caixas no eixo principal */
     align-items: center;              /* centraliza no eixo cruzado */
+    /* align-content distribui o conjunto de linhas quando sobra espaço no eixo cruzado. */
     align-content: center;            /* centraliza as linhas quando houver quebra */
     flex-wrap: wrap;                  /* janela menor: as caixas descem para a linha de baixo */
     gap: 10px;
 }
 
 /* A caixa também é flex para centralizar a foto dentro dela */
+/* width e height definem a área de conteúdo; padding acrescenta espaço interno. */
+/* Neste contêiner interno, justify-content centraliza a imagem no eixo horizontal. */
+/* align-items centraliza a imagem no eixo vertical. */
 .caixa {
     width: 120px;
     height: 120px;
@@ -21,6 +28,8 @@ body {
 }
 
 /* A foto cabe na caixa sem ser distorcida */
+/* Os limites são relativos à área de conteúdo da caixa. */
+/* Sem largura ou altura fixa na imagem, o navegador mantém suas proporções naturais. */
 .caixa img {
     max-width: 100%;
     max-height: 100%;

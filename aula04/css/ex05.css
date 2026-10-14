@@ -5,6 +5,7 @@ body {
 }
 
 /* Fundo laranja com bordas verdes */
+/* width ocupa toda a largura disponível; border-box inclui as bordas na largura e na altura declaradas. */
 .primeira {
     width: 100%;
     height: 200px;
@@ -14,6 +15,7 @@ body {
 }
 
 /* Fundo roxo: bordas superior e inferior amarelas, esquerda e direita marrons */
+/* Cada lado recebe uma borda própria; margin-top cria a separação externa entre as duas divisões. */
 .segunda {
     width: 100%;
     height: 200px;

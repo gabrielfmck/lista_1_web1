@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <!-- UTF-8 preserva os acentos; title identifica o exercício na aba do navegador. -->
     <head>
         <meta charset="UTF-8">
         <title>Aula 03 - Exercício 05</title>
         <style>
+            /* A lista de seletores aplica bordas pretas de 1 pixel à tabela, às linhas e às células. */
             table, tr, td {
                 border: 1px solid black;
             }
@@ -12,13 +14,17 @@
     <body>
         <h1>Exercício 05 - Tabela com Matrícula</h1>
 
+        <!-- table organiza os dados em uma grade; o atributo width especifica a largura pretendida. -->
+        <!-- tr cria uma linha e td cria uma célula; cada registro contém quatro colunas. -->
         <table width="500px">
+            <!-- A primeira linha apresenta os rótulos das colunas, destacados visualmente com b. -->
             <tr>
                 <td><b>Matrícula</b></td>
                 <td><b>Nome</b></td>
                 <td><b>Faltas</b></td>
                 <td><b>Nota</b></td>
             </tr>
+            <!-- As linhas seguintes armazenam matrícula, nome, faltas e nota de cada aluno. -->
             <tr>
                 <td>11223344</td>
                 <td>Pedro</td>

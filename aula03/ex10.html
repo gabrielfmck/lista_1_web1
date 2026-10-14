@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <!-- head reúne a codificação UTF-8, o título da aba e os estilos incorporados da tabela. -->
     <head>
         <meta charset="UTF-8">
         <title>Aula 03 - Exercício 10</title>
         <style>
+            /* A tabela ocupa toda a largura disponível e define a aparência geral do texto das células. */
             table {
                 width: 100%;
                 border-collapse: collapse;      /* remove o espaço entre as bordas */
@@ -11,21 +13,27 @@
                 font-size: 11pt;
                 color: #333333;
             }
+            /* As células recebem bordas, espaço interno vertical e horizontal e alinhamento central. */
             th, td {
                 border: 1px solid black;
                 padding: 25px 10px;
                 text-align: center;
             }
+            /* As células de cabeçalho ficam destacadas com fundo azul e texto branco. */
             th {
                 background-color: #0b4fa8;      /* azul do cabeçalho */
                 color: white;
             }
+            /* A classe esquerda ajusta o alinhamento das células da primeira coluna. */
             td.esquerda {
                 text-align: left;               /* primeira coluna alinhada à esquerda */
             }
+            /* O seletor usa a posição de cada linha em seu grupo para alternar a cor de fundo. */
             tr:nth-child(even) {
                 background-color: #a9d3fd;      /* linhas pares em azul claro */
             }
+            /* hover ativa o destaque somente enquanto o ponteiro está sobre uma linha de dados. */
+            /* Esta regra vem depois da alternância de cores e define o fundo durante a interação. */
             tbody tr:hover {
                 background-color: red;          /* realce da linha ao passar o mouse */
                 color: white;
@@ -35,7 +43,9 @@
     <body>
         <h1>Exercício 10 - Realce ao passar o mouse</h1>
 
+        <!-- A tabela organiza os valores em três colunas; as linhas do corpo recebem o efeito ao passar o mouse. -->
         <table>
+            <!-- thead agrupa os cabeçalhos th e fica fora do seletor de interação do tbody. -->
             <thead>
                 <tr>
                     <th>Base de cálculo mensal em R$</th>
@@ -43,6 +53,8 @@
                     <th>Parcela a deduzir do imposto em R$</th>
                 </tr>
             </thead>
+            <!-- tbody agrupa as linhas de dados; tr forma uma linha e td contém cada valor. -->
+            <!-- class="esquerda" associa a primeira coluna à regra CSS que alinha seu texto à esquerda. -->
             <tbody>
                 <tr>
                     <td class="esquerda">Até 1.903,98</td>

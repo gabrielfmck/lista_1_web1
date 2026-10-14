@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <!-- head configura a codificação, o título da aba e as bordas da tabela. -->
     <head>
         <meta charset="UTF-8">
         <title>Aula 03 - Exercício 08</title>
         <style>
+            /* A mesma borda preta de 1 pixel é aplicada aos elementos listados no seletor. */
             table, tr, th, td {
                 border: 1px solid black;
             }
@@ -12,6 +14,7 @@
     <body>
         <h1>Exercício 08 - Rowspan</h1>
 
+        <!-- A tabela relaciona horários e atividades; th marca os cabeçalhos e td contém os dados. -->
         <table>
             <tr>
                 <th>Horário</th>
@@ -22,6 +25,7 @@
                 <!-- a célula ocupa 2 linhas -->
                 <td rowspan="2">Reunião</td>
             </tr>
+            <!-- A célula Reunião já ocupa esta linha por rowspan; basta adicionar o novo horário. -->
             <tr>
                 <td>10:00 - 12:00</td>
             </tr>

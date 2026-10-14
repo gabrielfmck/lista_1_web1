@@ -1,15 +1,21 @@
+/* display: grid organiza os filhos diretos em uma grade bidimensional. */
+/* São cinco colunas e três linhas de 100px, separadas por intervalos de 10px. */
 .grid-container {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
     gap: 10px;
     /* Cada nome repetido faz o item ocupar mais de uma célula */
+    /* Cada string descreve uma linha; cada nome representa uma área retangular. */
+    /* item-2 e item-8 abrangem três colunas; item-3 e item-4 abrangem várias linhas. */
     grid-template-areas:
         "item-1 item-2 item-2 item-2 item-3"
         "item-4 item-5 item-6 item-7 item-3"
         "item-4 item-8 item-8 item-8 item-3";
 }
 
+/* Todos os itens recebem o mesmo visual: espaço interno, fundo azul e texto branco. */
+/* text-align centraliza o texto horizontalmente dentro da área de conteúdo. */
 .item {
     padding: 10px;
     background-color: blue;

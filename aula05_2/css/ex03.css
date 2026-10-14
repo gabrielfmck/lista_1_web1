@@ -1,8 +1,11 @@
+/* A fonte e seu tamanho são herdados pelos textos das divisões. */
 body {
     font-family: Arial, sans-serif;
     font-size: 20px;
 }
 
+/* O quadro ocupa 500px em cada dimensão e fica próximo ao canto da página. */
+/* Como ele é posicionado, as coordenadas dos filhos são relativas a ele. */
 .quadro {
     position: absolute;
     top: 8px;
@@ -12,6 +15,8 @@ body {
     background-color: yellow;
 }
 
+/* O seletor agrupado cria três quadrados do mesmo tamanho. */
+/* A posição absoluta permite definir coordenadas sem reservar espaço no fluxo. */
 .div1,
 .div2,
 .div3 {
@@ -20,12 +25,14 @@ body {
     height: 150px;
 }
 
+/* A primeira divisão ocupa o canto superior esquerdo do quadro. */
 .div1 {
     top: 0;
     left: 0;
     background-color: #e39c50;
 }
 
+/* O deslocamento vertical de 150px coloca a terceira divisão logo abaixo da primeira. */
 .div3 {
     top: 150px;
     left: 0;
@@ -33,6 +40,8 @@ body {
 }
 
 /* A segunda divisão fica sobre a primeira e a terceira. */
+/* O avanço de 25px nos dois eixos produz a sobreposição. */
+/* z-index: 1 eleva este bloco acima dos irmãos que mantêm z-index automático. */
 .div2 {
     top: 25px;
     left: 25px;

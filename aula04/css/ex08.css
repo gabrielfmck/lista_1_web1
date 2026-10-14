@@ -1,10 +1,12 @@
 /* O caminho da imagem é relativo ao arquivo CSS (css/), por isso o ../ */
+/* Aplica a imagem ao fundo do documento e define a cor e a fonte herdadas pelo texto. */
 body {
     background-image: url("../imagens/fundo.jpg");
     color: white;
     font-family: Arial, sans-serif;
 }
 
+/* Ajusta somente o tamanho dos parágrafos; as demais características vêm das regras do body. */
 p {
     font-size: 16pt;
 }
